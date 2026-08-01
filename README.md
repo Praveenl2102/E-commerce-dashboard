@@ -1,186 +1,278 @@
-# 🛒 E-Commerce Sales Analysis Dashboard
-
-A complete **E-Commerce Sales Analysis** project built using **Python, Pandas, NumPy, Matplotlib, Seaborn, and Jupyter Notebook**. This project focuses on cleaning, analyzing, and visualizing e-commerce sales data to uncover business insights and support data-driven decision-making.
-
----
+# 🛒 E-Commerce Sales Analysis | Python • SQL • Power BI
 
 ## 📌 Project Overview
 
-This project analyzes e-commerce transaction data to answer key business questions such as:
-
-- Total Revenue
-- Total Orders
-- Average Order Value (AOV)
-- Top Selling Products
-- Customer Purchase Patterns
-- Sales Trends
-- Monthly Performance
-- Category-wise Sales Analysis
+This project provides an end-to-end analysis of an E-Commerce dataset using **Python**, **SQL**, and **Power BI**. It covers data cleaning, exploratory data analysis (EDA), SQL-based business analysis, and interactive dashboard creation to generate actionable business insights.
 
 ---
 
-## 📂 Project Structure
+## 🎯 Objectives
+
+- Clean and preprocess raw e-commerce data
+- Perform exploratory data analysis (EDA)
+- Solve real-world business problems using SQL
+- Build interactive Power BI dashboards
+- Generate KPIs and business insights
+- Support data-driven decision making
+
+---
+
+# 🛠 Tech Stack
+
+- 🐍 Python
+- 🗄 SQL (MySQL / SQL Server)
+- 📊 Power BI
+- 📓 Jupyter Notebook
+- 📄 CSV Dataset
+
+---
+
+# 📂 Project Structure
 
 ```
 E-commerce-dashboard/
 │
-├── e commerce.ipynb          # Data Cleaning & Analysis
-├── cleaned_ecommerce.csv     # Cleaned Dataset
-├── e.details.csv             # Product Details
-├── e.orders.csv              # Orders Dataset
-├── summary.csv               # Summary Dataset
-├── README.md
+├── data/
+│   ├── e.orders.csv
+│   ├── e.details.csv
+│   ├── cleaned_ecommerce.csv
+│   └── summary.csv
+│
+├── notebooks/
+│   └── e commerce.ipynb
+│
+├── sql/
+│   └── Business_Scenarios.sql
+│
+├── powerbi/
+│   └── E-commerce Dashboard.pbix
+│
+├── images/
+│   └── dashboard.png
+│
+└── README.md
 ```
 
 ---
 
-# 🔄 Project Pipeline
+# 🔄 Project Workflow
 
 ```text
-                Raw Data
-                   │
-        ┌──────────┴──────────┐
-        │                     │
-  Orders Dataset        Product Dataset
-        │                     │
-        └──────────┬──────────┘
-                   │
-            Data Loading
-                   │
-                   ▼
-          Data Cleaning
-    (Missing Values, Duplicates,
-      Data Types, Formatting)
-                   │
-                   ▼
-        Data Preprocessing
-     (Merge, Transform, Feature
-           Engineering)
-                   │
-                   ▼
-      Exploratory Data Analysis
-     (Revenue, Orders, Profit,
-       Customers, Categories)
-                   │
-                   ▼
-        Data Visualization
- (Matplotlib & Seaborn Charts)
-                   │
-                   ▼
-        Business Insights
-                   │
-                   ▼
-      Decision Making & Reports
+                    Raw CSV Files
+                           │
+            ┌──────────────┴──────────────┐
+            │                             │
+      Orders Dataset               Product Dataset
+            │                             │
+            └──────────────┬──────────────┘
+                           │
+                           ▼
+                 Python Data Cleaning
+           (Pandas, NumPy, Data Validation)
+                           │
+                           ▼
+             Feature Engineering & EDA
+                           │
+                           ▼
+                 Cleaned Dataset Export
+                           │
+        ┌──────────────────┴──────────────────┐
+        │                                     │
+        ▼                                     ▼
+     SQL Analysis                     Power BI Dashboard
+        │                                     │
+        ▼                                     ▼
+ Business KPIs                     Interactive Visualizations
+        │                                     │
+        └──────────────────┬──────────────────┘
+                           ▼
+                 Business Insights & Reports
 ```
 
 ---
 
-## 🛠 Tech Stack
+# 📊 Dashboard KPIs
 
-- Python
+- Total Revenue
+- Total Orders
+- Total Customers
+- Average Order Value (AOV)
+- Total Profit
+- Profit Margin
+- Monthly Sales
+- State-wise Sales
+- Category-wise Sales
+- Customer Lifetime Value
+- Top Products
+- Top Customers
+
+---
+
+# 📈 Power BI Dashboard
+
+The dashboard includes:
+
+- KPI Cards
+- Sales Trend Analysis
+- Monthly Revenue
+- State-wise Sales
+- Category-wise Performance
+- Customer Analysis
+- Payment Mode Analysis
+- Product Performance
+- Interactive Filters & Slicers
+
+---
+
+# 🐍 Python Tasks
+
+- Data Import
+- Data Cleaning
+- Missing Value Handling
+- Duplicate Removal
+- Data Type Conversion
+- Feature Engineering
+- Exploratory Data Analysis (EDA)
+- Export Cleaned Dataset
+
+Libraries Used:
+
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- Jupyter Notebook
 
 ---
 
-## 📊 Analysis Performed
+# 🗄 SQL Analysis
 
-- Data Cleaning
-- Missing Value Treatment
-- Duplicate Removal
-- Dataset Merging
-- Feature Engineering
-- Revenue Analysis
-- Customer Analysis
-- Category Analysis
-- Monthly Sales Analysis
-- Product Performance Analysis
+Business scenarios solved using SQL:
 
----
-
-## 📈 Key Metrics
-
-- Total Sales
+- Total Revenue
 - Total Orders
-- Average Order Value (AOV)
-- Top Categories
+- Top Customers
 - Top Products
-- Monthly Revenue
-- Customer Distribution
+- Monthly Sales
+- Category-wise Sales
+- State-wise Sales
+- Customer Lifetime Value
+- Running Total
+- Product Ranking
+- Payment Mode Analysis
+- Repeat Customers
+- Month-over-Month Growth
+- Revenue Contribution
+- Top Customers by State
+
+SQL Concepts Used:
+
+- SELECT
+- WHERE
+- GROUP BY
+- HAVING
+- ORDER BY
+- Aggregate Functions
+- CASE WHEN
+- JOIN
+- CTE
+- Window Functions
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+- LAG()
+- Running Total
 
 ---
 
-## 📷 Sample Workflow
+# 📌 Business Insights
 
-```
-Raw CSV Files
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Exploratory Data Analysis
-      │
-      ▼
-Visualization
-      │
-      ▼
-Business Insights
-```
+- Identified top-performing products.
+- Analyzed regional sales performance.
+- Measured customer purchasing behavior.
+- Compared category-wise revenue.
+- Evaluated preferred payment methods.
+- Tracked monthly sales growth.
+- Identified repeat customers.
+- Ranked products by revenue.
+- Calculated customer lifetime value.
 
 ---
 
-## 🚀 How to Run
+# 🚀 How to Run
 
-1. Clone the repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/Praveenl2102/E-commerce-dashboard.git
 ```
 
-2. Install dependencies
+### Install Python Libraries
 
 ```bash
 pip install pandas numpy matplotlib seaborn jupyter
 ```
 
-3. Open Jupyter Notebook
+### Run Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-4. Run
+Open:
 
 ```
-e commerce.ipynb
+notebooks/e commerce.ipynb
+```
+
+### Execute SQL Queries
+
+Run:
+
+```
+sql/Business_Scenarios.sql
+```
+
+### Open Power BI Dashboard
+
+Open:
+
+```
+powerbi/E-commerce Dashboard.pbix
 ```
 
 ---
 
-## 📌 Business Insights
+# 📸 Dashboard Preview
 
-- Identified high-performing products.
-- Analyzed monthly sales trends.
-- Evaluated customer purchasing behavior.
-- Compared category-wise performance.
-- Generated actionable business insights.
+> Add your Power BI dashboard screenshot inside the `images` folder and reference it here.
+
+```markdown
+![Dashboard](images/dashboard.png)
+```
 
 ---
 
-## 📧 Author
+# 📚 Skills Demonstrated
+
+- Data Cleaning
+- Exploratory Data Analysis
+- SQL Query Writing
+- Business Problem Solving
+- Dashboard Development
+- KPI Design
+- Data Visualization
+- Data Modeling
+- Business Intelligence
+
+---
+
+# 👨‍💻 Author
 
 **Praveen Kumar**
 
 - GitHub: https://github.com/Praveenl2102
-- LinkedIn: www.linkedin.com/in/praveen-kumar-2102
+- LinkedIn: https://www.linkedin.com/in/praveen-kumar-2102
 
 ---
 
-⭐ If you found this project helpful, don't forget to **Star** this repository!
+## ⭐ If you found this project useful, please give it a Star!
